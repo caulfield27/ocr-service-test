@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "selfies",
+  "info": {
+    "singularName": "selfie",
+    "pluralName": "selfies",
+    "displayName": "Selfie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "img": {
+      "type": "text"
+    },
+    "doc_type": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "depart_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "staff_id": {
+      "type": "string"
+    },
+    "dt": {
+      "type": "string"
+    },
+    "TEMP_ID": {
+      "type": "string"
+    },
+    "TEMP_LID": {
+      "type": "string"
+    },
+    "TEMP_S_FOLDER": {
+      "type": "string"
+    }
+  }
+}
