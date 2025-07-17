@@ -30,15 +30,15 @@ const mokData = {
 
 const statuses = [
   {
-    isSolved: false,
+    is_solved: false,
     code: "asffa",
   },
   {
-    isSolved: true,
+    is_solved: true,
     code: "safahf",
   },
   {
-    isSolved: false,
+    is_solved: false,
     code: "qwrwq",
   }
 ]
@@ -73,20 +73,20 @@ module.exports = {
           return;
         };
 
-        let isSolved = true;
+        let is_solved = true;
 
         for(const status of statuses){
           if(status.code === doc_type){
-            status.isSolved = true;
+            status.is_solved = true;
           };
 
-          if(!status.isSolved){
-            isSolved = false;
+          if(!status.is_solved){
+            is_solved = false;
           };
         };
 
         ctx.status = 200;
-        ctx.body = {isSolved}
+        ctx.body = {is_solved}
     }catch(e){
         console.error(e);
         ctx.status = 500;
